@@ -3,7 +3,7 @@ import sys
 from models import *
 from utils.utils import *
 
-model = Darknet('cfg/yolov4.cfg', (352, 352))
+model = Darknet('cfg/yolov4.cfg', (256, 256))
 weights = sys.argv[1]
 dev = '0'
 if weights.endswith('.pt'):  # pytorch format
